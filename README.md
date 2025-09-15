@@ -27,7 +27,7 @@ We recommend downloading the above as packages in a conda environment (see https
 
 To run the main pipeline, `cd` into the `miniprot_pipeline` folder and enter the following command:
 ```
-python3 run_miniprot_pipeline -f /path/to/fasta/genome/assemblies -r /path/to/reference/sequence/directory -d /output/path [OPTIONAL] -i /path/to/miniprot/genome/indexes
+python3 run_miniprot_pipeline -f /path/to/fasta/genome/assemblies -r /path/to/reference/sequence/directory -d /output/path ([OPTIONAL] -i /path/to/miniprot/genome/indexes)
 ```
 
 Each input directory has specific formatting requirements. 
