@@ -41,5 +41,3 @@ if __name__ == "__main__":
     # add reference sequences to prediction fasta files
     mp.add_references_to_combined_files(reference_sequences, download_path)
 
-
-    # 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
