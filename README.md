@@ -40,7 +40,7 @@ The fasta genome assembly directory specified by the `-f` flag requires the foll
 The reference sequence directory specified by the `-r` flag requires the following: 
 - At least one child directory.
 - Child directories contain reference sequence fasta files (nucleotide format) named by gene or variant.
-- Each child directory is named after a taxon of interest in the fasta genome assembly directory. The reference sequences will be used query the genome assemblies in the directory with the matching name. 
+- The name of each child directory matches a fasta genome assembly directory taxon name. The reference sequences will be used query the genome assemblies in the directory with the matching name. 
 
 As indicated, the `-i` is optional and requires the prior creation of miniprot indexes. It is only meant to speed up the pipeline in subsequent instances after already running it once.
 
