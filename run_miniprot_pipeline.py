@@ -3,31 +3,7 @@ import os
 
 from src import miniprot_pipeline as mp
 
-
 if __name__ == "__main__":
-
-
-    #download_path = "/crun2/storage5/TonyX/miniprot_with_variants"
-    #reference_sequences = "/crun2/storage5/TonyX/miniprot_with_variants/miniprot_reference_AAs"
-    #master_genome_fastas = "/crun2/storage5/TonyX/chondrichthyes_genomes"
-    #master_genome_indexes = "/crun2/storage5/TonyX/master_genome_indexes"
-
-    # TODO: make this an option
-    # master_genome_indexes = mp.miniprot_index(master_genome_fastas, download_path)
-
-    #master_miniprot_alignments = mp.miniprot_align(reference_sequences, master_genome_indexes, download_path)
-    #master_agat_output = mp.agat_gff_cds_extraction(master_genome_fastas, master_miniprot_alignments, download_path)
-    #mp.combine_agat_files_by_gene(master_agat_output, download_path)
-
-    # remember setting up conda
-
-
-    # /crun2/storage5/TonyX/miniprot_test_genome_fastas
-    # /crun2/storage5/TonyX
-
-
-    # rm -r /crun2/storage5/TonyX/master_genome_indexes
-
 
     parser = argparse.ArgumentParser(description="This script automates gene prediction via miniprot.")
 
