@@ -26,3 +26,22 @@ We recommend downloading the above as packages in a conda environment (see https
 # Usage
 
 To run the main pipeline, `cd` into the `miniprot_pipeline` folder and enter the following command:
+```
+python3 run_miniprot_pipeline -f /path/to/fasta/genome/assemblies -r /path/to/reference/sequence/directory -d /output/path [OPTIONAL] -i /path/to/miniprot/genome/indexes
+```
+
+Each input directory has specific formatting requirements. 
+
+The fasta genome assembly directory specified by the `-f` flag requires the following:
+-At least one child directory.
+-Child directories contain .fasta genome assemblies named by species
+-Each child directory is named after the taxon of interest encompassing the species in the directory.
+
+The reference sequence directory specified by the `-r` flag requires the following: 
+-At least one child directory.
+-Child directories contain reference sequence fasta files (nucleotide format) named by gene or variant.
+-Each child directory is named after a taxon of interest in the fasta genome assembly directory. The reference sequences will be used query the genome assemblies in the directory with the matching name. 
+
+As indicated, the `-i` is optional and requires the prior creation of miniprot indexes. It is only meant to speed up the pipeline in subsequent instances after already running it once.
+
+Sample input directories are provided for reference. 
