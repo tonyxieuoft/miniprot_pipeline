@@ -12,4 +12,7 @@ The python package `Bio` must be installed (details can be found here: https://b
 Other installation requirements include:
 - miniprot 
 - AGAT, a .gff file processor
-We recommend downloading the above into a conda environment (see https://anaconda.org/bioconda/miniprot, https://anaconda.org/bioconda/agat for more details). 
+
+We recommend downloading the above as packages in a conda environment (see https://anaconda.org/bioconda/miniprot, https://anaconda.org/bioconda/agat for more details). 
+
+
