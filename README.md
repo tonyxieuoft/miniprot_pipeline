@@ -33,14 +33,14 @@ python3 run_miniprot_pipeline -f /path/to/fasta/genome/assemblies -r /path/to/re
 Each input directory has specific formatting requirements. 
 
 The fasta genome assembly directory specified by the `-f` flag requires the following:
--At least one child directory.
--Child directories contain .fasta genome assemblies named by species
--Each child directory is named after the taxon of interest encompassing the species in the directory.
+- At least one child directory.
+- Child directories contain .fasta genome assemblies named by species
+- Each child directory is named after the taxon of interest encompassing the species in the directory.
 
 The reference sequence directory specified by the `-r` flag requires the following: 
--At least one child directory.
--Child directories contain reference sequence fasta files (nucleotide format) named by gene or variant.
--Each child directory is named after a taxon of interest in the fasta genome assembly directory. The reference sequences will be used query the genome assemblies in the directory with the matching name. 
+- At least one child directory.
+- Child directories contain reference sequence fasta files (nucleotide format) named by gene or variant.
+- Each child directory is named after a taxon of interest in the fasta genome assembly directory. The reference sequences will be used query the genome assemblies in the directory with the matching name. 
 
 As indicated, the `-i` is optional and requires the prior creation of miniprot indexes. It is only meant to speed up the pipeline in subsequent instances after already running it once.
 
