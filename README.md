@@ -44,4 +44,4 @@ The reference sequence directory specified by the `-r` flag requires the followi
 
 As indicated, the `-i` is optional and requires the prior creation of miniprot indexes. It is only meant to speed up the pipeline in subsequent instances after already running it once.
 
-Sample input directories are provided for reference. 
+Sample input directories are provided for reference in `example input`. 
